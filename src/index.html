@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 12</title>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <load src="./partials/footer.html" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+<form id="searchForm" class="form" autocomplete="off">
+  <label>
+    <input class="input-search" type="text" name="searchInput" placeholder="Search images..." autofocus />
+  </label>
+  <button type="submit">Search</button>
+</form>
+
+<div id="imageResults"></div>
+<ul class="gallery"></ul>
+<button id="loadMoreBtn" style="display:none;">Load More</button>
+<div class="loader"></div>
+
+<script type="module" src="./main.js"></script>
+</body>
 </html>
